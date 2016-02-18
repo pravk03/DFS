@@ -107,7 +107,25 @@ void Graph::BFS(int s)
 }
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+    Graph g(4);
+    
+    g.addedge(0,1);
+    g.addedge(1,2);
+    g.addedge(0,3);
+    g.addedge(1,3);
+
+    
+    
+    cout<<"DFS"<<endl;
+    g.DFS();
+    
+    cout<<"BFS"<<endl;
+    g.BFS(0);
+    
+    printf("done\n");
+    
+    printf("done\n");
+    
     return 0;
 }
